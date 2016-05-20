@@ -5,7 +5,7 @@
 // Login   <guervi_a@epitech.eu>
 //
 // Started on  Thu Mar 10 14:26:12 2016 Alexis Guerville
-// Last update Sun Apr  3 15:54:59 2016 Alexis Guerville
+// Last update Fri May 20 19:56:06 2016 Alexis Guerville
 //
 
 #include <string>
@@ -792,10 +792,10 @@ void GLLib::drawCharacter(int width, int height, int widthMap, int heightMap, st
     22, 23, 20,
 	};
 	glEnable(GL_DEPTH_TEST);
-	if (spriteName == "square.png")
+	if (spriteName == "snake")
 	{
 		_view = glm::lookAt(
-				glm::vec3(0.0f, 1.0f, -1.0f),
+				glm::vec3(0.0f, 1.0f, -1.5f),
 				glm::vec3(-(float)(-1 + ((float)width * widthStep)), -(float)(-1 + ((float)height * heightStep)), 0.5f),
 				glm::vec3(0.0f, 1.0f, 0.0f)
 		);
@@ -804,7 +804,7 @@ void GLLib::drawCharacter(int width, int height, int widthMap, int heightMap, st
 	else if (spriteName.find("pacman") != std::string::npos)
 	{
 		_view = glm::lookAt(
-				glm::vec3(0.0f, 2.0f, -0.5f),
+				glm::vec3(0.0f, 1.5f, -1.5f),
 				glm::vec3(-(float)(-1 + ((float)width * widthStep)), -(float)(-1 + ((float)height * heightStep)), 0.5f),
 				glm::vec3(0.0f, 1.0f, 0.0f)
 		);
