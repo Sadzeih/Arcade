@@ -14,4 +14,4 @@ launch with:
 + `./arcade ./lib/lib_arcade_sdl.so` for SDL
 + `./arcade ./lib/lib_arcade_libcaca.so` for libcaca
 
-_You need to add `/lib/OpenGL/lib` to your `LD_LIBARY_PATH` environment variable to launch with OpenGL_
+_You need to add `./lib/OpenGL/lib` to your `LD_LIBARY_PATH` environment variable to launch with OpenGL_
